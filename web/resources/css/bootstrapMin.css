@@ -98,8 +98,8 @@
 
 /*Custom Colors And css From Rob.Ceron*/
 .modelo-bg {
-  background: url(../img/bg.png);/*fallback fo IE8*/
-  background-image: url(../img/bg.png), none;
+  background: url(resources/img/bg.png);/*fallback fo IE8*/
+  background-image: url(resources/img/bg.png), none;
 }
 
 
