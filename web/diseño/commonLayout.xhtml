@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Waynet - Ciber Cafe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <!--Bootstrap-->
+        <h:outputStylesheet name="bootstrap.css" library="css" />
+        <h:outputStylesheet name="bootstrapMin.css" library="css" />
+        <!-- Custom styles -->
+        <h:outputStylesheet name="custom.css" library="css" />
+        <h:outputStylesheet name="animations.css" library="css" />
+        <!-- Modernizr -->
+        <h:outputScript name="modernizr.custom.js" library="js"/>
+        <!--[if lt IE 9]>
+        <h:outputScript name="html5shiv.js" library="js"/>
+        <![endif]-->
+    </h:head>
+    <h:body>
+        <div id="pt-main" class="pt-perspective">      
+            <!--Home Screen-->
+            <article class="pt-page pt-page-1" id="home">
+              <div class="outer-wrapper white-bg">
+                <!--Header-->
+                <header class="row-fluid">
+                  <div class="container">
+                    <div class="span8 logo">
+                      <h1 class="dark">
+                          <h:graphicImage library="img" name="logo.jpg" />
+                      </h1>
+                    </div>
+                    <div class="span4">
+                      <ul class="social-bar-black">
+                        <li><a class="facebook-black" href="#" title="Facebook" target="_blank"></a></li>
+                        <li><a class="twitter-black" href="#" title="Twitter" target="_blank"></a></li>
+
+                        <li>
+                            <a href="#" class="user-black" title="Usuarios"></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </header>
+
+
+                <!--Navigation-->
+                <nav class="navi row-fluid">
+                  <div class="container">
+                    <div class="span12 clearfix">
+                      <div class="span4">
+                          <a href="#" class="small-navi about page-transition" onclick="gotoPageWithTrans(1)" >
+                              <i class="navi-icons about-icon"></i>Ventas
+                          </a>
+                          <a href="#" class="small-navi team page-transition" onclick="gotoPageWithTrans(1)" >
+                              <i class="navi-icons team-icon"></i>Inventario
+                          </a>
+                          <a href="#" class="middle-navi resume" onclick="gotoPageWithTrans(4)" >
+                              <i class="navi-icons resume-icon"></i>Descargar Información
+                          </a>
+                      </div>
+                      <div class="span4">
+                          <a href="#" class="big-navi works page-transition" onclick="gotoPageWithTrans(2)">
+                              <i class="navi-icons works-icon"></i>Tus Permisos
+                          </a>
+                      </div>
+                      <div class="span4">
+                          
+                          <a href="#" class="small-navi modelos page-transition" onclick="gotoPageWithTrans(4)">
+                              <i class="navi-icons modelos-icon"></i>Modelos
+                          </a>
+                          <a href="#" class="small-navi marcas page-transition" onclick="gotoPageWithTrans(5)">
+                              <i class="navi-icons contacts-icon"></i>Marcas
+                          </a>
+                          <a href="#" class="middle-navi blog page-transition" onclick="gotoPageWithTrans(3)">
+                              <i class="navi-icons blog-icon"></i>Usuarios
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+                <section class="container">
+                  <div class="clearfix">
+                    <div class="tw-feed">
+                      <p>Ciber Waynet ofrece a todos nuestros clientes una excelente atención y servicios especificos como impresiones,escaneos, digitaciones de texto y realización de cualquier tipo de documentacion que usted desee asi como venta de productos varios , atendiendole como a usted se merece<big>Pregunte Por Nuestras Promociones</big></p>
+                    </div>
+                    <div class="tw-feed-author">
+                      <a href="#" title="@Waynet">@Waynet</a><span></span>
+                    </div>
+                  </div>
+                </section>
+                <div class="push"><!--//--></div><!--Ryan Fait's Sticky Footer-->
+
+              </div> 
+              <!--Footer-->
+              <footer>
+                <div class="container">
+                  <p class="dark">Copyright &copy; <a href="http://portafolio.comuv.com/" target="_black">Soluciones Creativas</a>., 2013</p>
+                </div>
+              </footer>
+          </article>
+
+          <script type="text/javascript">
+            var cargaPrevio=false;
+          </script>
+
+          <ui:insert name="content" >
+
+	  </ui:insert>
+
+
+        </div>
+        <!-- jQuery -->
+           <script type="text/javascript">
+                var dato_a_cargar = 'resources/js/pagetransitions.js';
+          </script>
+        <h:outputScript name="jquery.js" library="js"/>
+        <h:outputScript name="validation.js" library="js"/>
+        <h:outputScript name="grid.js" library="js"/>
+        <h:outputScript name="scripts.js" library="js"/>
+        <h:outputScript >
+            loadScripts([dato_a_cargar],function(){});
+        </h:outputScript>
+    </h:body>
+</html>
+
